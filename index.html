@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cocktail Explorer</h1>
+    </header>
+    <main>
+        <section id="filters">
+            <input type="text" id="searchInput" placeholder="Search by name...">
+            <button id="searchBtn">Search</button>
+            <select id="categoryFilter">
+                <option value="">Select Category</option>
+                <!-- Populate categories here -->
+            </select>
+            <select id="ingredientFilter">
+                <option value="">Select Ingredient</option>
+                <!-- Populate ingredients here -->
+            </select>
+            <select id="alcoholicFilter">
+                <option value="">Alcohol Content</option>
+                <option value="Alcoholic">Alcoholic</option>
+                <option value="Non_Alcoholic">Non-Alcoholic</option>
+            </select>
+        </section>
+        <section id="results"></section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
