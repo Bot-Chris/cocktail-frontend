@@ -3,6 +3,7 @@ document.getElementById('categoryFilter').addEventListener('change', fetchCockta
 document.getElementById('ingredientFilter').addEventListener('change', fetchCocktails);
 document.getElementById('alcoholicFilter').addEventListener('change', fetchCocktails);
 
+const apiBaseUrl = 'http://cocktail-api-frontend.s3-website.us-east-2.amazonaws.com/';
 async function fetchCocktails() {
     const name = document.getElementById('searchInput').value;
     const category = document.getElementById('categoryFilter').value;
@@ -11,7 +12,7 @@ async function fetchCocktails() {
 
     // Construct the query URL based on selected filters
     let multFilters = false;
-    let queryUrl = `http://localhost:3000/`;
+    let queryUrl = `http://cocktail-api-frontend.s3-website.us-east-2.amazonaws.com/`;
     if(name) 
     {
         queryUrl += `search?name=${name}`;
